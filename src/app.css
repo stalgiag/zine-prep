@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'mono';
+  src: local('Courier New'), local('Courier'), local(monospace);
+}
+
+:root {
+  --paper: #f0ede6;
+  --ink: #1a1a1a;
+  --ink-faded: #3a3a3a;
+  --ink-light: #666;
+  --xerox-gray: #888;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--paper);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--ink);
+  color: var(--paper);
+}
